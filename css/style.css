@@ -34,36 +34,35 @@
 
 /* Studio box part */
 
-.header-div-container{
+.header-style{
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
     border-bottom: 1px solid #EEE;
 }
-
-.logo-section{
-    width: 145px;
-    margin: 24px 93px 25px 0px;
- }
-
- .link-header-style{
+.header-div-container{
     display: flex;
-    flex-direction:row; 
+    align-items: center;
     justify-content: space-between;
-    width:259px;
-    margin-top: 32px;
-    margin-bottom: 32px;
-    padding: 0px 0px 0px 0px;
+    width: 100%;
 }
- 
- .header-contacts {
+.header-style .logo-section{
+    margin: 25px 0px 25px 10vw;
+ }
+ .header-style .nav-section ul{
     display: flex;
-    flex-direction:row; 
+    justify-content: space-between;
+    width: 259px;
+    padding: 0px;
+    margin: 32px 0px ;
+ }
+ .header-contacts{
+    margin-right: 10vw;
+ }
+ .header-contacts ul {
+    display: flex; 
     justify-content: space-between;
     width:288px;
-    padding:0px 0px 0px 0px;
-    margin:32px 0px 32px 385px;
+    padding:0px;
+    margin:32px 0px;
 }
 
 
@@ -73,9 +72,9 @@
     display: flex; 
     align-items: center;
     flex-direction: column;
+    justify-content: center;
     width: 100%;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding: 200px 0px;
 }
 
 
@@ -86,22 +85,22 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 94px 0px 94px 0px;
+    padding: 94px 0px;
 }
 .features-style{ 
     display:flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-    width: 1170px;
+    width: 50vw;
     column-gap: 30px;
-    padding: 0px 0px 0px 0px;  
-    margin: 0px 215px 94px 215px;
+    padding: 0px;  
+    margin-bottom: 94px;
 }
 .feature-h2{ 
-    margin: 0px 701px 0px 701px;
     Width: 198px;
     justify-content: center;
+    margin: 0px 0px 50px 0px;
+    width: 60vw;
 }
 .feature-img-style{
     list-style: none;
@@ -110,9 +109,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 75%;
-    padding: 0px 0px 0px 0px;
-    margin: 50px 215px 0px 215px;
+    margin: 0px;
+    padding: 0px;
     column-gap: 30px;
 }
 
@@ -123,12 +121,11 @@
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    padding: 94px 0px 94px 0px;
+    padding: 94px 0px;
     
 }
 .our-team-style h2{
-    width: 165px;
-    margin:0px 717px 50px 718px;
+    margin:0px 0px 50px 0px;
 }
 .staf-style{ 
     list-style: none;
@@ -136,7 +133,6 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 75%;
     padding: 0px;
     margin: 0px; 
     column-gap: 30px;
@@ -160,27 +156,23 @@
 
 .footer-style{
     width: 100%;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    align-items:flex-start;
+    padding: 60px 0px;
 }
-
-
-.footer-logo-style{
+.footer-section{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10vw;
+}
+.footer-logo-section{
+    margin-bottom: 28px;
     width: 145px;
-    margin: 0px 1240px 28px 215px;
+    height:31px ;
 }
 .adr1{
-    width: 207px;
-    margin: 28px 1178px 0px 215px;
+     margin-bottom: 12px;
 }
-.adr2 { 
-    width: 231px;
-    margin: 0px 1154px 0px 215px;
-} 
-.adr3{width: 231px;
-    margin: 0px 1154px 0px 215px;
-
+.adr2{ 
+    margin-bottom: 12px;
 }
 
 
@@ -291,7 +283,7 @@
 }
 
 
-.header-contacts, .contact {
+.header-contacts ul, .contact {
     color:var(--p-and-header-contact-color); 
     list-style: none; 
     text-decoration: none;
@@ -313,7 +305,7 @@
     letter-spacing: 2.64px;
     text-transform: uppercase;  
     line-height:60px;
-    margin: 0px 452px 30px 452px;
+    margin: 0px;
     width:696px;
 }
 
@@ -330,8 +322,9 @@
     font-weight: 700; 
     font-family: inherit; 
     border-radius: 4px;
-    margin: 0px 700px 0px 700px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     width: 200px;
+    margin-top: 30px;
     
 }
 
