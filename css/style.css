@@ -14,6 +14,7 @@
     font-family:var(--main-text-style); 
     font-style: normal; 
     color:var(--main-text-color);
+    margin: 0px;
 
 }
 
@@ -21,7 +22,7 @@
 
 
 
-.header-div-container, .about-us-style, .main-style{ 
+.header-div-container, .about-us-style, .main-style, .regular-customers-section{ 
     background-color:var(--white-color);
 }
 .title-section-style, .footer-style {
@@ -40,6 +41,7 @@
 }
 .header-div-container{
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     width: 100%;
@@ -49,20 +51,34 @@
  }
  .header-style .nav-section ul{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     width: 259px;
     padding: 0px;
     margin: 32px 0px ;
  }
  .header-contacts{
     margin-right: 10vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
  }
- .header-contacts ul {
+ .header-contacts ul{
     display: flex; 
+    flex-direction: row;
     justify-content: space-between;
-    width:288px;
+    align-items: center;
+    width:333px;
     padding:0px;
     margin:32px 0px;
+}
+
+.header-contacts a{
+    fill: #757575;
+}
+.header-contacts a:hover{
+    fill: #2196F3;
 }
 
 
@@ -75,6 +91,10 @@
     justify-content: center;
     width: 100%;
     padding: 200px 0px;
+    background-image: url("../images/background-img.png");
+    background-color: rgba(47, 48, 58, 0.40);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -87,15 +107,45 @@
     width: 100%;
     padding: 94px 0px;
 }
+.svg-section ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    column-gap: 30px;
+    padding: 0px;
+    margin-bottom: 30px;
+}
+.svg-section ul li{
+    padding: 25px 100px;
+    background-color: #F5F4FA;
+    align-items: center;
+    justify-content: center;
+}
+
+
 .features-style{ 
     display:flex;
     flex-direction: row;
     justify-content: center;
-    width: 50vw;
+    width: 1170px;
     column-gap: 30px;
     padding: 0px;  
     margin-bottom: 94px;
 }
+.features-style h3{
+   margin-bottom: 10px;
+   margin-top: 0px;
+}
+
+.features-style p{
+    margin: 0px;
+}
+
+
+
+
 .feature-h2{ 
     Width: 198px;
     justify-content: center;
@@ -120,7 +170,6 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
     padding: 94px 0px;
     
 }
@@ -139,18 +188,74 @@
 }
 .staf-style img{
     max-width: 100%;
-    height: auto;
 }
-.employee-details-container{
+.staf-style li{
     background-color: var(--white-color);
     flex-direction: row;
-    column-gap: 30px;
-    border-top: none;
     text-align: center;
-    padding: 30px 61px 30px 62px;
+    column-gap: 30px;
     border-radius: 0px 0px 4px 4px;
-    margin-top: -5px;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
+.emp-information{
+    padding: 30px 32px;
+    margin-top:-5px;
+    
+}
+.employee-svg{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    height: 44px;
+}
+.employee-svg a{
+    padding: 12px;
+    fill:#AFB1B8; 
+}
+.employee-svg a:hover{
+    fill: #FFFFFF;
+    background-color: #2196F3;
+    border-radius: 50%;
+}
+
+
+
+
+
+.regular-customers-container{
+    padding: 94px 0px;
+}
+.regular-customers-container h2{
+    margin-bottom: 50px;
+    margin-top: 0px;
+}
+.regular-customers-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+    margin: 0px;
+    padding: 0px;
+    cursor: pointer;
+    
+    
+}
+.regular-customers-section a{
+    border-radius: 4px;
+    fill: #AFB1B8;
+    border: 1px solid #AFB1B8;
+    padding: 16px 32px;
+   
+}
+.regular-customers-section a:hover{
+    border: 1px solid #2196F3;
+    fill: #2196F3;
+    
+}
+
+
+
 
 
 
@@ -158,11 +263,51 @@
     width: 100%;
     padding: 60px 0px;
 }
-.footer-section{
+.footer-container{
+    display: flex;
+    flex-direction: row;
+}
+.footer-section1{
     display: flex;
     flex-direction: column;
     margin-left: 10vw;
 }
+.footer-section2{
+    display: flex;
+    flex-direction: column;
+    padding-left: 94px;
+}
+.footer-section2 h3{
+    color:var(--white-color);
+    font-family:Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.footer-section2 .footer-svg{
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    list-style-type: none;
+    column-gap: 10px;
+    margin: 0px;
+    padding: 0px; 
+}
+.footer-svg a{
+    padding: 12px 12px;
+    align-items: center;
+    fill: var(--white-color);
+    background-color: #FFFFFF1A;
+    border-radius: 50%;
+}
+.footer-svg a:hover{
+background-color: #2196F3;
+}
+
 .footer-logo-section{
     margin-bottom: 28px;
     width: 145px;
@@ -174,6 +319,7 @@
 .adr2{ 
     margin-bottom: 12px;
 }
+    
 
 
 /* Portofolio margin/padding section*/
@@ -212,7 +358,17 @@
    gap: 30px;
    padding: 0px;
    list-style: none;
-   margin: 0px;
+   
+}
+.our-portofolio-style li{
+    margin: -5px 0px 0px 0px;
+}
+
+
+.our-portofolio-style li:hover{
+    cursor: pointer;
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+
 }
 .our-portofolio-style li img{
   max-width: 100%;
@@ -224,6 +380,7 @@
     background-color: var(--white-color);
     border-top: none;
     border: 2px solid #EEE;
+    text-decoration: none;
     
 }
 .our-portofolio-style li span{
@@ -391,20 +548,28 @@ h2{
 
 
 
-.staf-style span{
+.staf-style h4{
     color:var(--main-text-color);
+    line-height: normal;
     text-align: center;
     font-size: 16px;
     font-weight: 500;
-    line-height: normal;
+    letter-spacing: 0.48px;
+    margin: 0px;
+
 }
+
 
 .staf-style p{
     color:var(--p-and-header-contact-color);
     text-align: center;
+    line-height: normal;
     font-size: 16px;
     font-weight: 400;
-    line-height: normal;
+    letter-spacing: 0.48px;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    
 }
 
 .street-style{
