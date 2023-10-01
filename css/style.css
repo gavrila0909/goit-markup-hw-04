@@ -65,21 +65,36 @@
     align-items: center;
  }
  .header-contacts ul{
+    fill: #757575;
     display: flex; 
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    width:333px;
+    justify-content: space-between;
     padding:0px;
     margin:32px 0px;
-}
+    width: 333px;
+ }
+ .header-contacts ul li .phone-number, .header-contacts ul li .mail{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+ }
 
-.header-contacts a{
-    fill: #757575;
-}
-.header-contacts a:hover{
-    fill: #2196F3;
-}
+
+
+
+ .header-contacts ul li:hover{
+   fill:#2196F3;
+ }
+
+
+
+
+
+ 
+
+
+
 
 
 
@@ -358,11 +373,10 @@ background-color: #2196F3;
    gap: 30px;
    padding: 0px;
    list-style: none;
-   
 }
-.our-portofolio-style li{
-    margin: -5px 0px 0px 0px;
-}
+
+
+
 
 
 .our-portofolio-style li:hover{
@@ -381,18 +395,20 @@ background-color: #2196F3;
     border-top: none;
     border: 2px solid #EEE;
     text-decoration: none;
-    
+    margin-top: -5px;
+    padding: 20px 24px;
 }
-.our-portofolio-style li span{
-    margin: 0px 24px;
-    padding-top: 30px;
-    padding-bottom: 20px;
-}
-.our-portofolio-style li p{
-    margin: 4px 24px 20px 24px;
+.text-images p{
+    margin: 4px 0px 0px 0px;
+    text-decoration: none;
 } 
 
-  
+.text-images span{
+    text-decoration: none;
+}
+.text-images span:hover {
+    text-decoration: none;
+}
 
 
 
@@ -440,16 +456,18 @@ background-color: #2196F3;
 }
 
 
-.header-contacts ul, .contact {
+.header-contacts ul, .mail, .phone-number {
     color:var(--p-and-header-contact-color); 
     list-style: none; 
     text-decoration: none;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
+    letter-spacing: 0.28px;
 }
 
-.contact:hover, .contact:focus{
+
+.mail:hover, .phone-number:hover, .mail:focus, .phone-number:focus{
     color:var(--main-activ-text-color);
 }
 
