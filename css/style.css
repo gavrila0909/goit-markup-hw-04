@@ -351,7 +351,7 @@ background-color: #2196F3;
     justify-content: center;
     column-gap: 8px;
     margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
+    padding: 0px;
 }
 
 .portofolio-img-section {
@@ -508,7 +508,7 @@ background-color: #2196F3;
 
 
 
-.buttons-style{
+.buttons-style{ 
     background-color:var(--button-background-color); 
     color:var(--main-text-color); 
     cursor: pointer; 
@@ -519,6 +519,8 @@ background-color: #2196F3;
     font-weight: 500; 
     font-family: inherit; 
     border-radius: 4px; 
+    padding: 6px 22px;
+    min-width: 64px;
 }
 
 .buttons-style:hover, .buttons-style:focus{
